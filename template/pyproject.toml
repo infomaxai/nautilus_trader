@@ -1,0 +1,16 @@
+[project]
+name = "template"
+version = "0.1.0"
+description = "Minimal Python and Rust template project"
+requires-python = ">=3.11"
+dependencies = [
+    "maturin>=1.5,<2.0",
+    "pytest>=8.0.0,<9.0.0",
+]
+
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+module-name = "template._hello"
